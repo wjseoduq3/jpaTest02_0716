@@ -2,9 +2,12 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/test.css}">
     <title>linkTest</title>
 </head>
 <body>
-
+    <a th:href="@{http://naver.com}"><div class="test">안녕하세요!!</div></a><br>
+    <a th:href="@{loginOk(id='gary2', pw='1111')}">로그인 OK!</a><br>
+    <img th:src="@{img/butterfly.jpg}">
 </body>
 </html>

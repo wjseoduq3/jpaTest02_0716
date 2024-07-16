@@ -2,9 +2,10 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>if연습</title>
 </head>
 <body>
-
+    <div th:if="${member.memberage > 35}" th:text="${temp}">중년</div>
+    <div th:if="${member.memberage <= 30}" th:text="${temp}">청년</div>
 </body>
 </html>

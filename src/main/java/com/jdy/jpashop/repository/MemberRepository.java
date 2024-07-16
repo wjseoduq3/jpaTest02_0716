@@ -16,6 +16,4 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
     @Transactional
     public void deleteAllByMembername(String membername);
 
-
-
 }

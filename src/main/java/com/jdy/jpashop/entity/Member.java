@@ -7,7 +7,9 @@ import lombok.*;
 @Table(name = "jpa_membertbl")
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+@Getter
+@Setter
+@ToString
 public class Member {
 
     @Id // 기본키로 설정
@@ -26,6 +28,5 @@ public class Member {
 
     @Column(name = "memberage")
     private int memberage;
-
 
 }
